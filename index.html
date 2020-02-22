@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vote With Your Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="text-transform: uppercase; color: black;">Vote With Your Wallet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav" style="padding-left: 600px;">
+                <a class="nav-item nav-link active" href="#homeSection">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#register">Register</a>
+                <a class="nav-item nav-link" href="#loginPanel">Login</a>
+                <a class="nav-item nav-link" href="#adminPanel">Admin</a>
+                <a class="nav-item nav-link" href="#myCause">My Cause</a>
+                <a class="nav-item nav-link" href="#createCause">Create Cause</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <div id="homeSection">
+        <div class="jumbotron">
+            <img style="padding-left: 300px;" src="./remember-to-vote.jpg" alt="Remember to vote" />
+        </div>
+    </div>
+
+    <!--Register Section-->
+    <div id="register" class="registerSection">
+
+        <h1 style="padding-left: 300px;"> Register</h1>
+        <hr>
+        <form style="max-width: 800px; padding-left: 200px;">
+
+            <div class="form-group">
+                <label for="exampleInputName"> Name </label>
+                <input type="text" class="form-control" id="exampleInputEmail" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputName"> User Name </label>
+                <input type="text" class="form-control" id="exampleInputEmail" placeholder="User Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail"> Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                    placeholder="example@gmail.com">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword"> Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputConfirmPassword"> Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputConfirmPassword"
+                    placeholder="Confirm Password">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"> Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Enter Your Address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1"> Choose File</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-left: 300px;">Register</button>
+        </form>
+    </div>
+
+    <!--Login Section-->
+    <div id="loginPanel" class="jumbotron" style="margin-top: 30px;">
+        <h1 style="padding-left: 500px;">Login</h1>
+        <hr>
+        <form style="max-width: 800px; padding-left: 300px;">
+            <div class="form-group">
+                <label for="loginexampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="loginexampleInputEmail1" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="loginexampleInputPassword1" placeholder="password">Password</label>
+                <input type="password" class="form-control" id="loginexampleInputPassword1" placeholder="Password">
+            </div>
+            <div style="margin-left: 200px;>
+            <button type=" submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Admin Panel-->
+
+    <div id="adminPanel" style="margin-top: 30px;">
+        <h1 style="padding-left: 500px; padding-bottom: 30px;"> Admin Login</h1>
+
+        <form style="max-width: 800px; padding-left: 300px;">
+            <div class="form-group">
+                <label for="adminexampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="adminexampleInputEmail1" placeholder="admin@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="adminexampleInputPassword1" placeholder="password">Password</label>
+                <input type="password" class="form-control" id="adminexampleInputPassword1" placeholder="Password">
+            </div>
+            <div style="margin-left: 200px;>
+            <button type=" submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!--My Cause-->
+    <div id="myCause" class="jumbotron" style="margin-top: 30px;">
+        <h3 style="padding-left: 200px; padding-bottom: 20px;"> My Cause :</h3>
+        <p> Comparison of Actual Pollution Damage Costs and the Pollution Control Costs That Would Have Prevented
+            the Damage, for Three Pollution-related Disease Outbreaks, Japan (¥ millions, 1989 equivalents)</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Pollution disease</th>
+                    <th scope="col">Main pollutant</th>
+                    <th scope="col">Pollution control costs</th>
+                    <th scope="col">Health damage</th>
+                    <th scope="col">Livelihood damage</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Social Like</th>
+                    <th scope="col">Social Comments</th>
+                    <th scope="col">Electronic Sign</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Yokkaichi asthma</th>
+                    <td>SO2, air pollution</td>
+                    <td>14,800</td>
+                    <td>21,000 (1,300)<sup>a</sup></td>
+                    <td>Not estimated</td>
+                    <td>21,000</td>
+                    <td><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-left: 30px;"></i></td>
+                    <td><i class="fa fa-share" aria-hidden="true" data-target="#sharedialog" data-toggle="modal" style="padding-left: 30px;"></i></td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@mdo">E-Sign</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Electronic Signature</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Sign:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save Sign</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Minamata disease</th>
+                    <td>Mercury, water pollution</td>
+                    <td>125</td>
+                    <td>7670</td>
+                    <td>690</td>
+                    <td>12,630</td>
+                    <td><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-left: 30px;"></i></td>
+                    <td><i class="fa fa-share" aria-hidden="true" data-target="#sharedialog" data-toggle="modal" style="padding-left: 30px;"></i></td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@mdo">E-Sign</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Electronic Signature</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label"> Sign:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save Sign</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Itai-Itai disease</th>
+                    <td>Cadmium, water and soil pollution</td>
+                    <td>600 </td>
+                    <td>740</td>
+                    <td>890</td>
+                    <td>2510</td>
+                    <td><i class="fa fa-thumbs-up" aria-hidden="true" style="padding-left: 30px;"></i></td>
+                    <td><i class="fa fa-share" aria-hidden="true" data-target="#sharedialog" data-toggle="modal" style="padding-left: 30px;"></i></td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@mdo">E-Sign</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Electronic Signature</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label"> Sign:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save Sign</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Create Cause-->
+    <div id="createCause">
+        <h3 style="padding-left: 500px;"> Create Cause</h3>
+
+        <form style="max-width: 1000px; padding-left: 300px;">
+
+            <div class="form-group">
+                <label for="pollutionDisease"> Pollution disease </label>
+                <input type="text" class="form-control" id="pollutionDisease" placeholder="Pollution Disease">
+            </div>
+
+            <div class="form-group">
+                <label for="Main pollutant"> Main pollutant </label>
+                <input type="text" class="form-control" id="Main pollutant" placeholder="Main pollutant">
+            </div>
+
+            <div class="form-group">
+                <label for="Pollution control costs"> Pollution control costs </label>
+                <input type="number" class="form-control" id="Pollution control costs" aria-describedby="emailHelp"
+                    placeholder="Pollution control costs">
+            </div>
+
+            <div class="form-group">
+                <label for="Health damage"> Health damage</label>
+                <input type="number" class="form-control" id="Health damage" placeholder="Health damage">
+            </div>
+
+            <div class="form-group">
+                <label for="Livelihood damage"> Livelihood damage</label>
+                <input type="text" class="form-control" id="Livelihood damage" placeholder="Confirm Password">
+            </div>
+
+
+            <div class="form-group">
+                <label for="total"> Total </label>
+                <input type="number" class="form-control" id="total" placeholder="Total">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1"> Choose File</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-left: 300px;">Create Cause</button>
+        </form>
+    </div>
+
+    <div id="sharedialognew">
+        <div class="modal fade" id="sharedialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Share Via</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-small blue" style="background-color:lightsalmon; margin-top: 20px;">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://getbootstrap.com/"> votefromyourwallet.com</a>
+        </div>
+
+        <!-- Copyright -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    </footer>
+
+
+
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--Bootstrap Script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
